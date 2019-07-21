@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News Scraper</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col'>
+                <h1>BBC News Scraper</h1>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col'>
+
+                <button type="button" class="btn btn-outline-info" id='scrapeButton'>Let's Scrape!</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class='container'>
+        <div class='row'>
+                <div class='col'><h3>Scraped Articles</h3>
+                <div id='articles'>
+            </div>
+        </div>
+
+            <div id='notes'>
+                <div class='col'>
+                    <h3>Notes</h3>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label></label><input type="text" class="form-control" id="titleinput"
+                            placeholder="Note heading">
+                    </div>
+                    <div class="form-group">
+                        <label></label><textarea class="form-control" id="bodyinput" rows="5"
+                            placeholder="Write a note.."></textarea>
+                    </div>
+
+                    <button class="btn btn-outline-info" data-id='" + data._id + "' id='savenote'>Save Note</button>
+
+                    <button class="btn btn-outline-info" data-id='" + data._id + "' id='clearnote'>Clear Note</button>
+                </form>
+
+                <div id='notesDiv'>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
